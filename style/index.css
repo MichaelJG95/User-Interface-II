@@ -155,6 +155,7 @@ footer {
     flex-direction: column;
     background-color: lightgrey;
     padding: 4%;
+    width: 100%;
 }
 
 footer a {
@@ -169,3 +170,38 @@ a:hover{
     color: white;
     background-color: black;
 }
+
+/*responsive querry*/
+
+
+@media(max-width:500px){
+    h1{
+        text-align: center;
+    }
+    header{
+        flex-direction: column;
+    }
+    nav{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    nav a{
+        margin: 0 35%;
+    }
+    .main {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+    .imageContainer{
+        width: 100%;
+    }
+    .galleryItem{
+        width: 50%;
+        text-align: center;
+    }
+    .introContainer{
+        width: 100%;
+    }
+}/*end of phone querry*/
