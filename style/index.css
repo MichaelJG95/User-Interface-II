@@ -51,7 +51,7 @@ table {
 
 *{
     box-sizing: border-box;
-    border: 1px solid gray;
+    /*border: 1px solid gray;*/
     max-width: 100%;
 }
 
@@ -80,6 +80,13 @@ section {
     margin: 0 auto;
 }
 
+a{
+    text-decoration: none;
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+}
+
 /*header section styles */
 
 header {
@@ -96,8 +103,7 @@ nav {
 nav a {
     display: inline-block;
     padding: 1% 2%;
-    text-decoration: none;
-    color: black;
+   
 }
 
 /*main section styles*/
@@ -173,6 +179,9 @@ a:hover{
 
 /*responsive querry*/
 
+@media(max-width:800px){
+    /*not needed*/
+}
 
 @media(max-width:500px){
     h1{
@@ -180,6 +189,7 @@ a:hover{
     }
     header{
         flex-direction: column;
+        background-color: white;
     }
     nav{
         display: flex;
